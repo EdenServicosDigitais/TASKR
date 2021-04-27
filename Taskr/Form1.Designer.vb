@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Descartar substituições de formulário para limpar a lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form1
     'OBSERVAÇÃO: o procedimento a seguir é exigido pelo Windows Form Designer
     'Pode ser modificado usando o Windows Form Designer.  
     'Não o modifique usando o editor de códigos.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
@@ -60,6 +60,12 @@ Partial Class Form1
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.AfriCircleImage2 = New AfriCircleImage.AfriCircleImage()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.FlowLayoutPanel1.SuspendLayout()
         Me.PnTask_1.SuspendLayout()
         CType(Me.important_1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -70,6 +76,7 @@ Partial Class Form1
         CType(Me.important_3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        CType(Me.AfriCircleImage2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -77,7 +84,7 @@ Partial Class Form1
         Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI Semibold", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(51, 136)
+        Me.Label1.Location = New System.Drawing.Point(36, 154)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(108, 30)
         Me.Label1.TabIndex = 0
@@ -88,7 +95,7 @@ Partial Class Form1
         Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI Semibold", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(311, 136)
+        Me.Label2.Location = New System.Drawing.Point(296, 154)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(85, 30)
         Me.Label2.TabIndex = 1
@@ -101,7 +108,7 @@ Partial Class Form1
         Me.FlowLayoutPanel1.Controls.Add(Me.PnTask_1)
         Me.FlowLayoutPanel1.Controls.Add(Me.PnTask_2)
         Me.FlowLayoutPanel1.Controls.Add(Me.PnTask_3)
-        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(316, 190)
+        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(301, 208)
         Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
         Me.FlowLayoutPanel1.Size = New System.Drawing.Size(322, 447)
         Me.FlowLayoutPanel1.TabIndex = 2
@@ -308,7 +315,7 @@ Partial Class Form1
         '
         Me.FlowLayoutPanel2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.FlowLayoutPanel2.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.FlowLayoutPanel2.Location = New System.Drawing.Point(653, 190)
+        Me.FlowLayoutPanel2.Location = New System.Drawing.Point(638, 208)
         Me.FlowLayoutPanel2.Name = "FlowLayoutPanel2"
         Me.FlowLayoutPanel2.Size = New System.Drawing.Size(322, 447)
         Me.FlowLayoutPanel2.TabIndex = 4
@@ -318,7 +325,7 @@ Partial Class Form1
         Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI Semibold", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(648, 136)
+        Me.Label3.Location = New System.Drawing.Point(633, 154)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(147, 30)
         Me.Label3.TabIndex = 3
@@ -328,7 +335,7 @@ Partial Class Form1
         '
         Me.FlowLayoutPanel3.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.FlowLayoutPanel3.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.FlowLayoutPanel3.Location = New System.Drawing.Point(990, 190)
+        Me.FlowLayoutPanel3.Location = New System.Drawing.Point(975, 208)
         Me.FlowLayoutPanel3.Name = "FlowLayoutPanel3"
         Me.FlowLayoutPanel3.Size = New System.Drawing.Size(322, 447)
         Me.FlowLayoutPanel3.TabIndex = 6
@@ -338,7 +345,7 @@ Partial Class Form1
         Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI Semibold", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(985, 136)
+        Me.Label4.Location = New System.Drawing.Point(970, 154)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(114, 30)
         Me.Label4.TabIndex = 5
@@ -350,7 +357,7 @@ Partial Class Form1
         Me.Rtx_Task.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Rtx_Task.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.Rtx_Task.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Rtx_Task.Location = New System.Drawing.Point(56, 190)
+        Me.Rtx_Task.Location = New System.Drawing.Point(41, 208)
         Me.Rtx_Task.Name = "Rtx_Task"
         Me.Rtx_Task.Size = New System.Drawing.Size(204, 80)
         Me.Rtx_Task.TabIndex = 1
@@ -367,7 +374,7 @@ Partial Class Form1
         Me.lbl_countToDo2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.lbl_countToDo2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_countToDo2.ForeColor = System.Drawing.Color.DodgerBlue
-        Me.lbl_countToDo2.Location = New System.Drawing.Point(789, 119)
+        Me.lbl_countToDo2.Location = New System.Drawing.Point(774, 137)
         Me.lbl_countToDo2.Name = "lbl_countToDo2"
         Me.lbl_countToDo2.Size = New System.Drawing.Size(19, 20)
         Me.lbl_countToDo2.TabIndex = 10
@@ -380,7 +387,7 @@ Partial Class Form1
         Me.lbl_countToDo3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.lbl_countToDo3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_countToDo3.ForeColor = System.Drawing.Color.DodgerBlue
-        Me.lbl_countToDo3.Location = New System.Drawing.Point(1098, 119)
+        Me.lbl_countToDo3.Location = New System.Drawing.Point(1083, 137)
         Me.lbl_countToDo3.Name = "lbl_countToDo3"
         Me.lbl_countToDo3.Size = New System.Drawing.Size(19, 20)
         Me.lbl_countToDo3.TabIndex = 11
@@ -392,7 +399,7 @@ Partial Class Form1
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Segoe UI Semibold", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.Black
-        Me.Label5.Location = New System.Drawing.Point(1122, 34)
+        Me.Label5.Location = New System.Drawing.Point(1122, 21)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(114, 37)
         Me.Label5.TabIndex = 12
@@ -401,11 +408,11 @@ Partial Class Form1
         'AfriCircleImage1
         '
         Me.AfriCircleImage1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.AfriCircleImage1.BackColor = System.Drawing.Color.DarkGreen
+        Me.AfriCircleImage1.BackColor = System.Drawing.Color.SpringGreen
         Me.AfriCircleImage1.Image = CType(resources.GetObject("AfriCircleImage1.Image"), System.Drawing.Image)
-        Me.AfriCircleImage1.Location = New System.Drawing.Point(1242, 21)
+        Me.AfriCircleImage1.Location = New System.Drawing.Point(1260, 21)
         Me.AfriCircleImage1.Name = "AfriCircleImage1"
-        Me.AfriCircleImage1.Size = New System.Drawing.Size(70, 70)
+        Me.AfriCircleImage1.Size = New System.Drawing.Size(50, 50)
         Me.AfriCircleImage1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.AfriCircleImage1.TabIndex = 13
         Me.AfriCircleImage1.TabStop = False
@@ -419,7 +426,7 @@ Partial Class Form1
         Me.Btn_createTaskk.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_createTaskk.Font = New System.Drawing.Font("Segoe UI Semilight", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn_createTaskk.ForeColor = System.Drawing.Color.White
-        Me.Btn_createTaskk.Location = New System.Drawing.Point(56, 281)
+        Me.Btn_createTaskk.Location = New System.Drawing.Point(41, 299)
         Me.Btn_createTaskk.Name = "Btn_createTaskk"
         Me.Btn_createTaskk.Size = New System.Drawing.Size(204, 52)
         Me.Btn_createTaskk.TabIndex = 14
@@ -455,9 +462,9 @@ Partial Class Form1
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel1.Controls.Add(Me.Label7)
         Me.Panel1.Controls.Add(Me.Panel2)
-        Me.Panel1.Location = New System.Drawing.Point(56, 346)
+        Me.Panel1.Location = New System.Drawing.Point(41, 377)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(200, 92)
+        Me.Panel1.Size = New System.Drawing.Size(204, 92)
         Me.Panel1.TabIndex = 15
         '
         'Panel2
@@ -485,11 +492,74 @@ Partial Class Form1
         '
         Me.Label7.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label7.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(84, 22)
+        Me.Label7.Location = New System.Drawing.Point(86, 22)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(102, 54)
         Me.Label7.TabIndex = 2
         Me.Label7.Text = "Tarefas concluídas"
+        '
+        'ProgressBar1
+        '
+        Me.ProgressBar1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ProgressBar1.Location = New System.Drawing.Point(1129, 84)
+        Me.ProgressBar1.Name = "ProgressBar1"
+        Me.ProgressBar1.Size = New System.Drawing.Size(119, 10)
+        Me.ProgressBar1.TabIndex = 16
+        Me.ProgressBar1.Value = 40
+        '
+        'Label8
+        '
+        Me.Label8.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(1256, 79)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(54, 19)
+        Me.Label8.TabIndex = 17
+        Me.Label8.Text = "Nível 0"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(46, 47)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(28, 21)
+        Me.Label9.TabIndex = 18
+        Me.Label9.Text = "26"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(92, 47)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(89, 21)
+        Me.Label10.TabIndex = 19
+        Me.Label10.Text = "Novembro"
+        '
+        'AfriCircleImage2
+        '
+        Me.AfriCircleImage2.BackColor = System.Drawing.Color.DodgerBlue
+        Me.AfriCircleImage2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.AfriCircleImage2.Location = New System.Drawing.Point(76, 53)
+        Me.AfriCircleImage2.Name = "AfriCircleImage2"
+        Me.AfriCircleImage2.Size = New System.Drawing.Size(10, 10)
+        Me.AfriCircleImage2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.AfriCircleImage2.TabIndex = 21
+        Me.AfriCircleImage2.TabStop = False
+        '
+        'Label11
+        '
+        Me.Label11.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Label11.Location = New System.Drawing.Point(1130, 58)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(79, 19)
+        Me.Label11.TabIndex = 22
+        Me.Label11.Text = "unstopable"
         '
         'Form1
         '
@@ -497,6 +567,12 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1340, 695)
+        Me.Controls.Add(Me.Label11)
+        Me.Controls.Add(Me.AfriCircleImage2)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Btn_createTaskk)
         Me.Controls.Add(Me.AfriCircleImage1)
@@ -528,6 +604,7 @@ Partial Class Form1
         CType(Me.important_3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
+        CType(Me.AfriCircleImage2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -569,4 +646,10 @@ Partial Class Form1
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
+    Friend WithEvents ProgressBar1 As ProgressBar
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents AfriCircleImage2 As AfriCircleImage.AfriCircleImage
+    Friend WithEvents Label11 As Label
 End Class
