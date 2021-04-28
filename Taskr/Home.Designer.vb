@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form1
+Partial Class Home
     Inherits System.Windows.Forms.Form
 
     'Descartar substituições de formulário para limpar a lista de componentes.
@@ -23,26 +23,21 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Home))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
         Me.PnTask_1 = New System.Windows.Forms.Panel()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.important_1 = New AfriCircleImage.AfriCircleImage()
         Me.btn_delete1 = New System.Windows.Forms.Label()
         Me.BtnBack_1 = New System.Windows.Forms.Label()
         Me.BtnNext_1 = New System.Windows.Forms.Label()
         Me.lblTask_1 = New System.Windows.Forms.Label()
         Me.PnTask_2 = New System.Windows.Forms.Panel()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.important_2 = New AfriCircleImage.AfriCircleImage()
         Me.Btn_delete2 = New System.Windows.Forms.Label()
         Me.BtnBack_2 = New System.Windows.Forms.Label()
         Me.BtnNext_2 = New System.Windows.Forms.Label()
         Me.lblTask_2 = New System.Windows.Forms.Label()
         Me.PnTask_3 = New System.Windows.Forms.Panel()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.important_3 = New AfriCircleImage.AfriCircleImage()
         Me.Btn_delete3 = New System.Windows.Forms.Label()
         Me.BtnBack_3 = New System.Windows.Forms.Label()
         Me.BtnNext_3 = New System.Windows.Forms.Label()
@@ -55,49 +50,47 @@ Partial Class Form1
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.lbl_countToDo2 = New System.Windows.Forms.Label()
         Me.lbl_countToDo3 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.lbl_Usuário = New System.Windows.Forms.Label()
         Me.Btn_createTaskk = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label7 = New System.Windows.Forms.Label()
+        Me.lbl_TarefasC = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.lbl_TasksConcluidas = New System.Windows.Forms.Label()
-        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
+        Me.ProgressBarLevelHome = New System.Windows.Forms.ProgressBar()
+        Me.lbl_Level = New System.Windows.Forms.Label()
+        Me.lbl_Titles = New System.Windows.Forms.Label()
         Me.lbl_TaskPointer = New System.Windows.Forms.Label()
-        Me.PnMonitor_1 = New System.Windows.Forms.Label()
-        Me.PnMonitor_2 = New System.Windows.Forms.Label()
-        Me.PnMonitor_3 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Label15 = New System.Windows.Forms.Label()
+        Me.lbl_TarefasE = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.lbl_TasksExcluidas = New System.Windows.Forms.Label()
-        Me.lbl_Desempenho = New System.Windows.Forms.Label()
+        Me.Btn_Pomodoro = New System.Windows.Forms.Button()
+        Me.lbl_Pomodoro = New System.Windows.Forms.Label()
+        Me.Pomodoro = New System.Windows.Forms.Timer(Me.components)
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.BtnDarkMode = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.pic_Desempenho = New System.Windows.Forms.PictureBox()
-        Me.AfriCircleImage2 = New AfriCircleImage.AfriCircleImage()
-        Me.AfriCircleImage1 = New AfriCircleImage.AfriCircleImage()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.AfriCircleImage3 = New AfriCircleImage.AfriCircleImage()
-        Me.lbl_countToDo1 = New System.Windows.Forms.Label()
+        Me.Pic_Profile = New AfriCircleImage.AfriCircleImage()
+        Me.important_1 = New AfriCircleImage.AfriCircleImage()
+        Me.important_2 = New AfriCircleImage.AfriCircleImage()
+        Me.important_3 = New AfriCircleImage.AfriCircleImage()
         Me.FlowLayoutPanel1.SuspendLayout()
         Me.PnTask_1.SuspendLayout()
-        CType(Me.important_1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PnTask_2.SuspendLayout()
-        CType(Me.important_2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PnTask_3.SuspendLayout()
-        CType(Me.important_3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pic_Desempenho, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.AfriCircleImage2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.AfriCircleImage1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.AfriCircleImage3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Pic_Profile, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.important_1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.important_2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.important_3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -105,7 +98,7 @@ Partial Class Form1
         Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI Semibold", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(36, 154)
+        Me.Label1.Location = New System.Drawing.Point(94, 215)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(94, 30)
         Me.Label1.TabIndex = 0
@@ -116,7 +109,7 @@ Partial Class Form1
         Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI Semibold", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(296, 154)
+        Me.Label2.Location = New System.Drawing.Point(406, 216)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(85, 30)
         Me.Label2.TabIndex = 1
@@ -129,7 +122,7 @@ Partial Class Form1
         Me.FlowLayoutPanel1.Controls.Add(Me.PnTask_1)
         Me.FlowLayoutPanel1.Controls.Add(Me.PnTask_2)
         Me.FlowLayoutPanel1.Controls.Add(Me.PnTask_3)
-        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(301, 208)
+        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(411, 270)
         Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
         Me.FlowLayoutPanel1.Size = New System.Drawing.Size(322, 447)
         Me.FlowLayoutPanel1.TabIndex = 2
@@ -137,7 +130,6 @@ Partial Class Form1
         'PnTask_1
         '
         Me.PnTask_1.BackColor = System.Drawing.Color.White
-        Me.PnTask_1.Controls.Add(Me.Label12)
         Me.PnTask_1.Controls.Add(Me.important_1)
         Me.PnTask_1.Controls.Add(Me.btn_delete1)
         Me.PnTask_1.Controls.Add(Me.BtnBack_1)
@@ -149,30 +141,6 @@ Partial Class Form1
         Me.PnTask_1.Size = New System.Drawing.Size(301, 135)
         Me.PnTask_1.TabIndex = 0
         Me.PnTask_1.Visible = False
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.ForeColor = System.Drawing.Color.Black
-        Me.Label12.Location = New System.Drawing.Point(270, 41)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(16, 17)
-        Me.Label12.TabIndex = 15
-        Me.Label12.Text = "1"
-        '
-        'important_1
-        '
-        Me.important_1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.important_1.BackColor = System.Drawing.Color.Silver
-        Me.important_1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.important_1.Location = New System.Drawing.Point(264, 13)
-        Me.important_1.Name = "important_1"
-        Me.important_1.Size = New System.Drawing.Size(25, 25)
-        Me.important_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.important_1.TabIndex = 14
-        Me.important_1.TabStop = False
         '
         'btn_delete1
         '
@@ -224,7 +192,6 @@ Partial Class Form1
         'PnTask_2
         '
         Me.PnTask_2.BackColor = System.Drawing.Color.White
-        Me.PnTask_2.Controls.Add(Me.Label13)
         Me.PnTask_2.Controls.Add(Me.important_2)
         Me.PnTask_2.Controls.Add(Me.Btn_delete2)
         Me.PnTask_2.Controls.Add(Me.BtnBack_2)
@@ -236,30 +203,6 @@ Partial Class Form1
         Me.PnTask_2.Size = New System.Drawing.Size(301, 135)
         Me.PnTask_2.TabIndex = 1
         Me.PnTask_2.Visible = False
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.ForeColor = System.Drawing.Color.Black
-        Me.Label13.Location = New System.Drawing.Point(270, 41)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(16, 17)
-        Me.Label13.TabIndex = 16
-        Me.Label13.Text = "2"
-        '
-        'important_2
-        '
-        Me.important_2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.important_2.BackColor = System.Drawing.Color.Silver
-        Me.important_2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.important_2.Location = New System.Drawing.Point(264, 13)
-        Me.important_2.Name = "important_2"
-        Me.important_2.Size = New System.Drawing.Size(25, 25)
-        Me.important_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.important_2.TabIndex = 15
-        Me.important_2.TabStop = False
         '
         'Btn_delete2
         '
@@ -311,7 +254,6 @@ Partial Class Form1
         'PnTask_3
         '
         Me.PnTask_3.BackColor = System.Drawing.Color.White
-        Me.PnTask_3.Controls.Add(Me.Label14)
         Me.PnTask_3.Controls.Add(Me.important_3)
         Me.PnTask_3.Controls.Add(Me.Btn_delete3)
         Me.PnTask_3.Controls.Add(Me.BtnBack_3)
@@ -323,30 +265,6 @@ Partial Class Form1
         Me.PnTask_3.Size = New System.Drawing.Size(301, 135)
         Me.PnTask_3.TabIndex = 2
         Me.PnTask_3.Visible = False
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.ForeColor = System.Drawing.Color.Black
-        Me.Label14.Location = New System.Drawing.Point(270, 41)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(16, 17)
-        Me.Label14.TabIndex = 17
-        Me.Label14.Text = "3"
-        '
-        'important_3
-        '
-        Me.important_3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.important_3.BackColor = System.Drawing.Color.Silver
-        Me.important_3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.important_3.Location = New System.Drawing.Point(264, 13)
-        Me.important_3.Name = "important_3"
-        Me.important_3.Size = New System.Drawing.Size(25, 25)
-        Me.important_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.important_3.TabIndex = 16
-        Me.important_3.TabStop = False
         '
         'Btn_delete3
         '
@@ -399,7 +317,7 @@ Partial Class Form1
         '
         Me.FlowLayoutPanel2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.FlowLayoutPanel2.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.FlowLayoutPanel2.Location = New System.Drawing.Point(638, 208)
+        Me.FlowLayoutPanel2.Location = New System.Drawing.Point(748, 270)
         Me.FlowLayoutPanel2.Name = "FlowLayoutPanel2"
         Me.FlowLayoutPanel2.Size = New System.Drawing.Size(322, 447)
         Me.FlowLayoutPanel2.TabIndex = 4
@@ -409,7 +327,7 @@ Partial Class Form1
         Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI Semibold", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(633, 154)
+        Me.Label3.Location = New System.Drawing.Point(743, 216)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(147, 30)
         Me.Label3.TabIndex = 3
@@ -419,7 +337,7 @@ Partial Class Form1
         '
         Me.FlowLayoutPanel3.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.FlowLayoutPanel3.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.FlowLayoutPanel3.Location = New System.Drawing.Point(975, 208)
+        Me.FlowLayoutPanel3.Location = New System.Drawing.Point(1085, 270)
         Me.FlowLayoutPanel3.Name = "FlowLayoutPanel3"
         Me.FlowLayoutPanel3.Size = New System.Drawing.Size(322, 447)
         Me.FlowLayoutPanel3.TabIndex = 6
@@ -429,7 +347,7 @@ Partial Class Form1
         Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI Semibold", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(970, 154)
+        Me.Label4.Location = New System.Drawing.Point(1080, 216)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(114, 30)
         Me.Label4.TabIndex = 5
@@ -441,7 +359,7 @@ Partial Class Form1
         Me.Rtx_Task.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Rtx_Task.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.Rtx_Task.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Rtx_Task.Location = New System.Drawing.Point(41, 208)
+        Me.Rtx_Task.Location = New System.Drawing.Point(99, 269)
         Me.Rtx_Task.Name = "Rtx_Task"
         Me.Rtx_Task.Size = New System.Drawing.Size(204, 80)
         Me.Rtx_Task.TabIndex = 1
@@ -458,7 +376,7 @@ Partial Class Form1
         Me.lbl_countToDo2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.lbl_countToDo2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_countToDo2.ForeColor = System.Drawing.Color.White
-        Me.lbl_countToDo2.Location = New System.Drawing.Point(786, 159)
+        Me.lbl_countToDo2.Location = New System.Drawing.Point(896, 221)
         Me.lbl_countToDo2.Name = "lbl_countToDo2"
         Me.lbl_countToDo2.Size = New System.Drawing.Size(25, 25)
         Me.lbl_countToDo2.TabIndex = 10
@@ -472,24 +390,22 @@ Partial Class Form1
         Me.lbl_countToDo3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.lbl_countToDo3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_countToDo3.ForeColor = System.Drawing.Color.White
-        Me.lbl_countToDo3.Location = New System.Drawing.Point(1090, 159)
+        Me.lbl_countToDo3.Location = New System.Drawing.Point(1200, 221)
         Me.lbl_countToDo3.Name = "lbl_countToDo3"
         Me.lbl_countToDo3.Size = New System.Drawing.Size(25, 25)
         Me.lbl_countToDo3.TabIndex = 11
         Me.lbl_countToDo3.Text = "-"
         Me.lbl_countToDo3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label5
+        'lbl_Usuário
         '
-        Me.Label5.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Segoe UI Semibold", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.Black
-        Me.Label5.Location = New System.Drawing.Point(1122, 21)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(111, 37)
-        Me.Label5.TabIndex = 12
-        Me.Label5.Text = "Usuario"
+        Me.lbl_Usuário.Font = New System.Drawing.Font("Segoe UI Semibold", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_Usuário.ForeColor = System.Drawing.Color.Black
+        Me.lbl_Usuário.Location = New System.Drawing.Point(186, 45)
+        Me.lbl_Usuário.Name = "lbl_Usuário"
+        Me.lbl_Usuário.Size = New System.Drawing.Size(177, 37)
+        Me.lbl_Usuário.TabIndex = 12
+        Me.lbl_Usuário.Text = "Usuario"
         '
         'Btn_createTaskk
         '
@@ -500,7 +416,7 @@ Partial Class Form1
         Me.Btn_createTaskk.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_createTaskk.Font = New System.Drawing.Font("Segoe UI Semilight", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn_createTaskk.ForeColor = System.Drawing.Color.White
-        Me.Btn_createTaskk.Location = New System.Drawing.Point(41, 299)
+        Me.Btn_createTaskk.Location = New System.Drawing.Point(99, 360)
         Me.Btn_createTaskk.Name = "Btn_createTaskk"
         Me.Btn_createTaskk.Size = New System.Drawing.Size(204, 52)
         Me.Btn_createTaskk.TabIndex = 14
@@ -511,22 +427,22 @@ Partial Class Form1
         '
         Me.Panel1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel1.Controls.Add(Me.Label7)
+        Me.Panel1.Controls.Add(Me.lbl_TarefasC)
         Me.Panel1.Controls.Add(Me.Panel2)
-        Me.Panel1.Location = New System.Drawing.Point(41, 377)
+        Me.Panel1.Location = New System.Drawing.Point(99, 439)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(204, 92)
         Me.Panel1.TabIndex = 15
         '
-        'Label7
+        'lbl_TarefasC
         '
-        Me.Label7.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label7.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(86, 22)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(102, 54)
-        Me.Label7.TabIndex = 2
-        Me.Label7.Text = "Tarefas concluídas"
+        Me.lbl_TarefasC.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lbl_TarefasC.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_TarefasC.Location = New System.Drawing.Point(86, 22)
+        Me.lbl_TarefasC.Name = "lbl_TarefasC"
+        Me.lbl_TarefasC.Size = New System.Drawing.Size(102, 54)
+        Me.lbl_TarefasC.TabIndex = 2
+        Me.lbl_TarefasC.Text = "Tarefas concluídas"
         '
         'Panel2
         '
@@ -549,57 +465,34 @@ Partial Class Form1
         Me.lbl_TasksConcluidas.Text = "00"
         Me.lbl_TasksConcluidas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'ProgressBar1
+        'ProgressBarLevelHome
         '
-        Me.ProgressBar1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ProgressBar1.Location = New System.Drawing.Point(1129, 84)
-        Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(119, 10)
-        Me.ProgressBar1.TabIndex = 16
-        Me.ProgressBar1.Value = 40
+        Me.ProgressBarLevelHome.Location = New System.Drawing.Point(101, 108)
+        Me.ProgressBarLevelHome.Name = "ProgressBarLevelHome"
+        Me.ProgressBarLevelHome.Size = New System.Drawing.Size(161, 10)
+        Me.ProgressBarLevelHome.TabIndex = 16
+        Me.ProgressBarLevelHome.Value = 40
         '
-        'Label8
+        'lbl_Level
         '
-        Me.Label8.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(1256, 79)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(54, 19)
-        Me.Label8.TabIndex = 17
-        Me.Label8.Text = "Nível 0"
+        Me.lbl_Level.AutoSize = True
+        Me.lbl_Level.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_Level.Location = New System.Drawing.Point(268, 102)
+        Me.lbl_Level.Name = "lbl_Level"
+        Me.lbl_Level.Size = New System.Drawing.Size(54, 19)
+        Me.lbl_Level.TabIndex = 17
+        Me.lbl_Level.Text = "Nível 0"
         '
-        'Label9
+        'lbl_Titles
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(46, 47)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(28, 21)
-        Me.Label9.TabIndex = 18
-        Me.Label9.Text = "26"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(92, 47)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(89, 21)
-        Me.Label10.TabIndex = 19
-        Me.Label10.Text = "Novembro"
-        '
-        'Label11
-        '
-        Me.Label11.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label11.Location = New System.Drawing.Point(1130, 58)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(49, 19)
-        Me.Label11.TabIndex = 22
-        Me.Label11.Text = "titulos"
+        Me.lbl_Titles.AutoSize = True
+        Me.lbl_Titles.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_Titles.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.lbl_Titles.Location = New System.Drawing.Point(160, 79)
+        Me.lbl_Titles.Name = "lbl_Titles"
+        Me.lbl_Titles.Size = New System.Drawing.Size(49, 19)
+        Me.lbl_Titles.TabIndex = 22
+        Me.lbl_Titles.Text = "titulos"
         '
         'lbl_TaskPointer
         '
@@ -608,68 +501,32 @@ Partial Class Form1
         Me.lbl_TaskPointer.Cursor = System.Windows.Forms.Cursors.Hand
         Me.lbl_TaskPointer.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_TaskPointer.ForeColor = System.Drawing.Color.Black
-        Me.lbl_TaskPointer.Location = New System.Drawing.Point(130, 154)
+        Me.lbl_TaskPointer.Location = New System.Drawing.Point(188, 215)
         Me.lbl_TaskPointer.Name = "lbl_TaskPointer"
         Me.lbl_TaskPointer.Size = New System.Drawing.Size(16, 17)
         Me.lbl_TaskPointer.TabIndex = 23
         Me.lbl_TaskPointer.Text = "1"
         '
-        'PnMonitor_1
-        '
-        Me.PnMonitor_1.AutoSize = True
-        Me.PnMonitor_1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PnMonitor_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PnMonitor_1.ForeColor = System.Drawing.Color.Black
-        Me.PnMonitor_1.Location = New System.Drawing.Point(201, 46)
-        Me.PnMonitor_1.Name = "PnMonitor_1"
-        Me.PnMonitor_1.Size = New System.Drawing.Size(16, 17)
-        Me.PnMonitor_1.TabIndex = 24
-        Me.PnMonitor_1.Text = "1"
-        '
-        'PnMonitor_2
-        '
-        Me.PnMonitor_2.AutoSize = True
-        Me.PnMonitor_2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PnMonitor_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PnMonitor_2.ForeColor = System.Drawing.Color.Black
-        Me.PnMonitor_2.Location = New System.Drawing.Point(236, 46)
-        Me.PnMonitor_2.Name = "PnMonitor_2"
-        Me.PnMonitor_2.Size = New System.Drawing.Size(16, 17)
-        Me.PnMonitor_2.TabIndex = 25
-        Me.PnMonitor_2.Text = "1"
-        '
-        'PnMonitor_3
-        '
-        Me.PnMonitor_3.AutoSize = True
-        Me.PnMonitor_3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PnMonitor_3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PnMonitor_3.ForeColor = System.Drawing.Color.Black
-        Me.PnMonitor_3.Location = New System.Drawing.Point(271, 46)
-        Me.PnMonitor_3.Name = "PnMonitor_3"
-        Me.PnMonitor_3.Size = New System.Drawing.Size(16, 17)
-        Me.PnMonitor_3.TabIndex = 26
-        Me.PnMonitor_3.Text = "1"
-        '
         'Panel3
         '
         Me.Panel3.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel3.Controls.Add(Me.Label15)
+        Me.Panel3.Controls.Add(Me.lbl_TarefasE)
         Me.Panel3.Controls.Add(Me.Panel4)
-        Me.Panel3.Location = New System.Drawing.Point(42, 478)
+        Me.Panel3.Location = New System.Drawing.Point(100, 540)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(204, 92)
         Me.Panel3.TabIndex = 27
         '
-        'Label15
+        'lbl_TarefasE
         '
-        Me.Label15.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label15.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(86, 22)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(102, 54)
-        Me.Label15.TabIndex = 2
-        Me.Label15.Text = "Tarefas excluídas"
+        Me.lbl_TarefasE.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lbl_TarefasE.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_TarefasE.Location = New System.Drawing.Point(86, 22)
+        Me.lbl_TarefasE.Name = "lbl_TarefasE"
+        Me.lbl_TarefasE.Size = New System.Drawing.Size(102, 54)
+        Me.lbl_TarefasE.TabIndex = 2
+        Me.lbl_TarefasE.Text = "Tarefas excluídas"
         '
         'Panel4
         '
@@ -692,144 +549,174 @@ Partial Class Form1
         Me.lbl_TasksExcluidas.Text = "00"
         Me.lbl_TasksExcluidas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'lbl_Desempenho
+        'Btn_Pomodoro
         '
-        Me.lbl_Desempenho.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lbl_Desempenho.AutoSize = True
-        Me.lbl_Desempenho.Font = New System.Drawing.Font("Segoe UI Semibold", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_Desempenho.Location = New System.Drawing.Point(41, 579)
-        Me.lbl_Desempenho.Name = "lbl_Desempenho"
-        Me.lbl_Desempenho.Size = New System.Drawing.Size(154, 25)
-        Me.lbl_Desempenho.TabIndex = 28
-        Me.lbl_Desempenho.Text = "Desempenho 1.0"
+        Me.Btn_Pomodoro.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Btn_Pomodoro.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Btn_Pomodoro.FlatAppearance.BorderSize = 0
+        Me.Btn_Pomodoro.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_Pomodoro.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Pomodoro.ForeColor = System.Drawing.Color.White
+        Me.Btn_Pomodoro.Location = New System.Drawing.Point(100, 133)
+        Me.Btn_Pomodoro.Name = "Btn_Pomodoro"
+        Me.Btn_Pomodoro.Size = New System.Drawing.Size(136, 30)
+        Me.Btn_Pomodoro.TabIndex = 30
+        Me.Btn_Pomodoro.Text = "Iniciar"
+        Me.Btn_Pomodoro.UseVisualStyleBackColor = False
+        '
+        'lbl_Pomodoro
+        '
+        Me.lbl_Pomodoro.BackColor = System.Drawing.Color.DodgerBlue
+        Me.lbl_Pomodoro.Font = New System.Drawing.Font("Segoe UI Semibold", 14.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_Pomodoro.ForeColor = System.Drawing.Color.White
+        Me.lbl_Pomodoro.Location = New System.Drawing.Point(242, 133)
+        Me.lbl_Pomodoro.Name = "lbl_Pomodoro"
+        Me.lbl_Pomodoro.Size = New System.Drawing.Size(70, 30)
+        Me.lbl_Pomodoro.TabIndex = 32
+        Me.lbl_Pomodoro.Text = "00:00"
+        Me.lbl_Pomodoro.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Pomodoro
+        '
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ComboBox1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox1.ForeColor = System.Drawing.Color.Black
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Todas", "Importantes", "Urgentes"})
+        Me.ComboBox1.Location = New System.Drawing.Point(1300, 67)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(107, 28)
+        Me.ComboBox1.TabIndex = 35
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.PictureBox2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox2.Image = Global.Taskr.My.Resources.Resources.gear
+        Me.PictureBox2.Location = New System.Drawing.Point(277, 682)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(24, 31)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 38
+        Me.PictureBox2.TabStop = False
+        '
+        'BtnDarkMode
+        '
+        Me.BtnDarkMode.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.BtnDarkMode.BackColor = System.Drawing.Color.Black
+        Me.BtnDarkMode.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnDarkMode.FlatAppearance.BorderSize = 0
+        Me.BtnDarkMode.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnDarkMode.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnDarkMode.ForeColor = System.Drawing.Color.White
+        Me.BtnDarkMode.Image = Global.Taskr.My.Resources.Resources.moon__1_
+        Me.BtnDarkMode.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnDarkMode.Location = New System.Drawing.Point(99, 678)
+        Me.BtnDarkMode.Name = "BtnDarkMode"
+        Me.BtnDarkMode.Padding = New System.Windows.Forms.Padding(5)
+        Me.BtnDarkMode.Size = New System.Drawing.Size(160, 39)
+        Me.BtnDarkMode.TabIndex = 37
+        Me.BtnDarkMode.Text = "    Dark Mode"
+        Me.BtnDarkMode.UseVisualStyleBackColor = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox1.Image = Global.Taskr.My.Resources.Resources.filter
+        Me.PictureBox1.Location = New System.Drawing.Point(1269, 70)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(25, 25)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 36
+        Me.PictureBox1.TabStop = False
         '
         'pic_Desempenho
         '
-        Me.pic_Desempenho.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.pic_Desempenho.BackColor = System.Drawing.Color.Transparent
         Me.pic_Desempenho.Image = Global.Taskr.My.Resources.Resources.down
-        Me.pic_Desempenho.Location = New System.Drawing.Point(220, 579)
+        Me.pic_Desempenho.Location = New System.Drawing.Point(163, 51)
         Me.pic_Desempenho.Name = "pic_Desempenho"
         Me.pic_Desempenho.Size = New System.Drawing.Size(25, 25)
         Me.pic_Desempenho.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.pic_Desempenho.TabIndex = 29
         Me.pic_Desempenho.TabStop = False
         '
-        'AfriCircleImage2
+        'Pic_Profile
         '
-        Me.AfriCircleImage2.BackColor = System.Drawing.Color.DodgerBlue
-        Me.AfriCircleImage2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.AfriCircleImage2.Location = New System.Drawing.Point(76, 53)
-        Me.AfriCircleImage2.Name = "AfriCircleImage2"
-        Me.AfriCircleImage2.Size = New System.Drawing.Size(10, 10)
-        Me.AfriCircleImage2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.AfriCircleImage2.TabIndex = 21
-        Me.AfriCircleImage2.TabStop = False
+        Me.Pic_Profile.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Pic_Profile.Image = Global.Taskr.My.Resources.Resources.Logos___3__removebg_preview
+        Me.Pic_Profile.Location = New System.Drawing.Point(99, 45)
+        Me.Pic_Profile.Name = "Pic_Profile"
+        Me.Pic_Profile.Size = New System.Drawing.Size(50, 50)
+        Me.Pic_Profile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Pic_Profile.TabIndex = 13
+        Me.Pic_Profile.TabStop = False
         '
-        'AfriCircleImage1
+        'important_1
         '
-        Me.AfriCircleImage1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.AfriCircleImage1.BackColor = System.Drawing.Color.SpringGreen
-        Me.AfriCircleImage1.Location = New System.Drawing.Point(1260, 21)
-        Me.AfriCircleImage1.Name = "AfriCircleImage1"
-        Me.AfriCircleImage1.Size = New System.Drawing.Size(50, 50)
-        Me.AfriCircleImage1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.AfriCircleImage1.TabIndex = 13
-        Me.AfriCircleImage1.TabStop = False
+        Me.important_1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.important_1.BackColor = System.Drawing.Color.Silver
+        Me.important_1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.important_1.Location = New System.Drawing.Point(264, 13)
+        Me.important_1.Name = "important_1"
+        Me.important_1.Size = New System.Drawing.Size(25, 25)
+        Me.important_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.important_1.TabIndex = 14
+        Me.important_1.TabStop = False
         '
-        'Button1
+        'important_2
         '
-        Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Button1.BackColor = System.Drawing.Color.DodgerBlue
-        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(554, 37)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(82, 30)
-        Me.Button1.TabIndex = 30
-        Me.Button1.Text = "Iniciar"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.important_2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.important_2.BackColor = System.Drawing.Color.Silver
+        Me.important_2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.important_2.Location = New System.Drawing.Point(264, 13)
+        Me.important_2.Name = "important_2"
+        Me.important_2.Size = New System.Drawing.Size(25, 25)
+        Me.important_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.important_2.TabIndex = 15
+        Me.important_2.TabStop = False
         '
-        'Label6
+        'important_3
         '
-        Me.Label6.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label6.Location = New System.Drawing.Point(714, 42)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(72, 21)
-        Me.Label6.TabIndex = 31
-        Me.Label6.Text = "Pausado"
+        Me.important_3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.important_3.BackColor = System.Drawing.Color.Silver
+        Me.important_3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.important_3.Location = New System.Drawing.Point(264, 13)
+        Me.important_3.Name = "important_3"
+        Me.important_3.Size = New System.Drawing.Size(25, 25)
+        Me.important_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.important_3.TabIndex = 16
+        Me.important_3.TabStop = False
         '
-        'Label16
-        '
-        Me.Label16.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label16.Location = New System.Drawing.Point(642, 42)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(50, 21)
-        Me.Label16.TabIndex = 32
-        Me.Label16.Text = "00:00"
-        '
-        'AfriCircleImage3
-        '
-        Me.AfriCircleImage3.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.AfriCircleImage3.BackColor = System.Drawing.Color.Gray
-        Me.AfriCircleImage3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.AfriCircleImage3.Location = New System.Drawing.Point(698, 48)
-        Me.AfriCircleImage3.Name = "AfriCircleImage3"
-        Me.AfriCircleImage3.Size = New System.Drawing.Size(10, 10)
-        Me.AfriCircleImage3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.AfriCircleImage3.TabIndex = 33
-        Me.AfriCircleImage3.TabStop = False
-        '
-        'lbl_countToDo1
-        '
-        Me.lbl_countToDo1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lbl_countToDo1.BackColor = System.Drawing.Color.DodgerBlue
-        Me.lbl_countToDo1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.lbl_countToDo1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_countToDo1.ForeColor = System.Drawing.Color.White
-        Me.lbl_countToDo1.Location = New System.Drawing.Point(387, 159)
-        Me.lbl_countToDo1.Name = "lbl_countToDo1"
-        Me.lbl_countToDo1.Size = New System.Drawing.Size(25, 25)
-        Me.lbl_countToDo1.TabIndex = 34
-        Me.lbl_countToDo1.Text = "-"
-        Me.lbl_countToDo1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Form1
+        'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1340, 695)
-        Me.Controls.Add(Me.lbl_countToDo1)
-        Me.Controls.Add(Me.AfriCircleImage3)
-        Me.Controls.Add(Me.Label16)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Button1)
+        Me.ClientSize = New System.Drawing.Size(1501, 758)
+        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.BtnDarkMode)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.lbl_Pomodoro)
+        Me.Controls.Add(Me.Btn_Pomodoro)
         Me.Controls.Add(Me.pic_Desempenho)
-        Me.Controls.Add(Me.lbl_Desempenho)
         Me.Controls.Add(Me.Panel3)
-        Me.Controls.Add(Me.PnMonitor_3)
-        Me.Controls.Add(Me.PnMonitor_2)
-        Me.Controls.Add(Me.PnMonitor_1)
         Me.Controls.Add(Me.lbl_TaskPointer)
-        Me.Controls.Add(Me.Label11)
-        Me.Controls.Add(Me.AfriCircleImage2)
-        Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.ProgressBar1)
+        Me.Controls.Add(Me.lbl_Titles)
+        Me.Controls.Add(Me.lbl_Level)
+        Me.Controls.Add(Me.ProgressBarLevelHome)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Btn_createTaskk)
-        Me.Controls.Add(Me.AfriCircleImage1)
-        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Pic_Profile)
+        Me.Controls.Add(Me.lbl_Usuário)
         Me.Controls.Add(Me.lbl_countToDo3)
         Me.Controls.Add(Me.lbl_countToDo2)
         Me.Controls.Add(Me.Rtx_Task)
@@ -840,28 +727,28 @@ Partial Class Form1
         Me.Controls.Add(Me.FlowLayoutPanel1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Name = "Form1"
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Name = "Home"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Form1"
+        Me.Text = "Easy"
         Me.FlowLayoutPanel1.ResumeLayout(False)
         Me.PnTask_1.ResumeLayout(False)
         Me.PnTask_1.PerformLayout()
-        CType(Me.important_1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PnTask_2.ResumeLayout(False)
         Me.PnTask_2.PerformLayout()
-        CType(Me.important_2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PnTask_3.ResumeLayout(False)
         Me.PnTask_3.PerformLayout()
-        CType(Me.important_3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         Me.Panel3.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pic_Desempenho, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.AfriCircleImage2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.AfriCircleImage1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.AfriCircleImage3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Pic_Profile, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.important_1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.important_2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.important_3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -890,8 +777,8 @@ Partial Class Form1
     Friend WithEvents lblTask_3 As Label
     Friend WithEvents lbl_countToDo2 As Label
     Friend WithEvents lbl_countToDo3 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents AfriCircleImage1 As AfriCircleImage.AfriCircleImage
+    Friend WithEvents lbl_Usuário As Label
+    Friend WithEvents Pic_Profile As AfriCircleImage.AfriCircleImage
     Friend WithEvents btn_delete1 As Label
     Friend WithEvents Btn_delete2 As Label
     Friend WithEvents Btn_delete3 As Label
@@ -901,30 +788,22 @@ Partial Class Form1
     Friend WithEvents important_3 As AfriCircleImage.AfriCircleImage
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents Label7 As Label
+    Friend WithEvents lbl_TarefasC As Label
     Friend WithEvents lbl_TasksConcluidas As Label
-    Friend WithEvents ProgressBar1 As ProgressBar
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label9 As Label
-    Friend WithEvents Label10 As Label
-    Friend WithEvents AfriCircleImage2 As AfriCircleImage.AfriCircleImage
-    Friend WithEvents Label11 As Label
-    Friend WithEvents Label12 As Label
-    Friend WithEvents Label13 As Label
-    Friend WithEvents Label14 As Label
+    Friend WithEvents ProgressBarLevelHome As ProgressBar
+    Friend WithEvents lbl_Level As Label
+    Friend WithEvents lbl_Titles As Label
     Friend WithEvents lbl_TaskPointer As Label
-    Friend WithEvents PnMonitor_1 As Label
-    Friend WithEvents PnMonitor_2 As Label
-    Friend WithEvents PnMonitor_3 As Label
     Friend WithEvents Panel3 As Panel
-    Friend WithEvents Label15 As Label
+    Friend WithEvents lbl_TarefasE As Label
     Friend WithEvents Panel4 As Panel
     Friend WithEvents lbl_TasksExcluidas As Label
-    Friend WithEvents lbl_Desempenho As Label
     Friend WithEvents pic_Desempenho As PictureBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label16 As Label
-    Friend WithEvents AfriCircleImage3 As AfriCircleImage.AfriCircleImage
-    Friend WithEvents lbl_countToDo1 As Label
+    Friend WithEvents Btn_Pomodoro As Button
+    Friend WithEvents lbl_Pomodoro As Label
+    Friend WithEvents Pomodoro As Timer
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents BtnDarkMode As Button
+    Friend WithEvents PictureBox2 As PictureBox
 End Class
