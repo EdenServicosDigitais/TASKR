@@ -123,5 +123,11 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\classificar-para-baixo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\classificar-para-baixo %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
