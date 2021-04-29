@@ -31,17 +31,14 @@ Partial Class Home
         Me.btn_delete1 = New System.Windows.Forms.Label()
         Me.BtnBack_1 = New System.Windows.Forms.Label()
         Me.BtnNext_1 = New System.Windows.Forms.Label()
-        Me.lblTask_1 = New System.Windows.Forms.Label()
         Me.PnTask_2 = New System.Windows.Forms.Panel()
         Me.Btn_delete2 = New System.Windows.Forms.Label()
         Me.BtnBack_2 = New System.Windows.Forms.Label()
         Me.BtnNext_2 = New System.Windows.Forms.Label()
-        Me.lblTask_2 = New System.Windows.Forms.Label()
         Me.PnTask_3 = New System.Windows.Forms.Panel()
         Me.Btn_delete3 = New System.Windows.Forms.Label()
         Me.BtnBack_3 = New System.Windows.Forms.Label()
         Me.BtnNext_3 = New System.Windows.Forms.Label()
-        Me.lblTask_3 = New System.Windows.Forms.Label()
         Me.FlowLayoutPanel2 = New System.Windows.Forms.FlowLayoutPanel()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.FlowLayoutPanel3 = New System.Windows.Forms.FlowLayoutPanel()
@@ -68,14 +65,27 @@ Partial Class Home
         Me.lbl_Pomodoro = New System.Windows.Forms.Label()
         Me.Pomodoro = New System.Windows.Forms.Timer(Me.components)
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.stage_1 = New System.Windows.Forms.Label()
+        Me.stage_2 = New System.Windows.Forms.Label()
+        Me.stage_3 = New System.Windows.Forms.Label()
+        Me.lbl_pointer1 = New System.Windows.Forms.Label()
+        Me.lbl_pointer2 = New System.Windows.Forms.Label()
+        Me.lbl_pointer3 = New System.Windows.Forms.Label()
+        Me.lblTask_1 = New System.Windows.Forms.RichTextBox()
+        Me.lblTask_2 = New System.Windows.Forms.RichTextBox()
+        Me.lblTask_3 = New System.Windows.Forms.RichTextBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.BtnDarkMode = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.pic_Desempenho = New System.Windows.Forms.PictureBox()
         Me.Pic_Profile = New AfriCircleImage.AfriCircleImage()
+        Me.EditTask_1 = New System.Windows.Forms.PictureBox()
         Me.important_1 = New AfriCircleImage.AfriCircleImage()
         Me.important_2 = New AfriCircleImage.AfriCircleImage()
         Me.important_3 = New AfriCircleImage.AfriCircleImage()
+        Me.EditTask_2 = New System.Windows.Forms.PictureBox()
+        Me.EditTask_3 = New System.Windows.Forms.PictureBox()
         Me.FlowLayoutPanel1.SuspendLayout()
         Me.PnTask_1.SuspendLayout()
         Me.PnTask_2.SuspendLayout()
@@ -88,9 +98,12 @@ Partial Class Home
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pic_Desempenho, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Pic_Profile, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EditTask_1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.important_1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.important_2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.important_3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EditTask_2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EditTask_3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -109,7 +122,7 @@ Partial Class Home
         Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI Semibold", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(406, 216)
+        Me.Label2.Location = New System.Drawing.Point(406, 215)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(85, 30)
         Me.Label2.TabIndex = 1
@@ -118,27 +131,31 @@ Partial Class Home
         'FlowLayoutPanel1
         '
         Me.FlowLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.FlowLayoutPanel1.AutoScroll = True
         Me.FlowLayoutPanel1.BackColor = System.Drawing.Color.WhiteSmoke
         Me.FlowLayoutPanel1.Controls.Add(Me.PnTask_1)
         Me.FlowLayoutPanel1.Controls.Add(Me.PnTask_2)
         Me.FlowLayoutPanel1.Controls.Add(Me.PnTask_3)
         Me.FlowLayoutPanel1.Location = New System.Drawing.Point(411, 270)
         Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
-        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(322, 447)
+        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(340, 447)
         Me.FlowLayoutPanel1.TabIndex = 2
         '
         'PnTask_1
         '
         Me.PnTask_1.BackColor = System.Drawing.Color.White
+        Me.PnTask_1.Controls.Add(Me.EditTask_1)
+        Me.PnTask_1.Controls.Add(Me.lblTask_1)
+        Me.PnTask_1.Controls.Add(Me.lbl_pointer1)
+        Me.PnTask_1.Controls.Add(Me.stage_1)
         Me.PnTask_1.Controls.Add(Me.important_1)
         Me.PnTask_1.Controls.Add(Me.btn_delete1)
         Me.PnTask_1.Controls.Add(Me.BtnBack_1)
         Me.PnTask_1.Controls.Add(Me.BtnNext_1)
-        Me.PnTask_1.Controls.Add(Me.lblTask_1)
         Me.PnTask_1.Location = New System.Drawing.Point(8, 8)
         Me.PnTask_1.Margin = New System.Windows.Forms.Padding(8, 8, 8, 5)
         Me.PnTask_1.Name = "PnTask_1"
-        Me.PnTask_1.Size = New System.Drawing.Size(301, 135)
+        Me.PnTask_1.Size = New System.Drawing.Size(301, 173)
         Me.PnTask_1.TabIndex = 0
         Me.PnTask_1.Visible = False
         '
@@ -148,7 +165,7 @@ Partial Class Home
         Me.btn_delete1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_delete1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_delete1.ForeColor = System.Drawing.Color.DeepPink
-        Me.btn_delete1.Location = New System.Drawing.Point(15, 107)
+        Me.btn_delete1.Location = New System.Drawing.Point(15, 140)
         Me.btn_delete1.Name = "btn_delete1"
         Me.btn_delete1.Size = New System.Drawing.Size(49, 17)
         Me.btn_delete1.TabIndex = 3
@@ -161,7 +178,7 @@ Partial Class Home
         Me.BtnBack_1.Enabled = False
         Me.BtnBack_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnBack_1.ForeColor = System.Drawing.Color.DodgerBlue
-        Me.BtnBack_1.Location = New System.Drawing.Point(209, 107)
+        Me.BtnBack_1.Location = New System.Drawing.Point(209, 140)
         Me.BtnBack_1.Name = "BtnBack_1"
         Me.BtnBack_1.Size = New System.Drawing.Size(39, 17)
         Me.BtnBack_1.TabIndex = 2
@@ -173,34 +190,27 @@ Partial Class Home
         Me.BtnNext_1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnNext_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnNext_1.ForeColor = System.Drawing.Color.DodgerBlue
-        Me.BtnNext_1.Location = New System.Drawing.Point(253, 107)
+        Me.BtnNext_1.Location = New System.Drawing.Point(253, 140)
         Me.BtnNext_1.Name = "BtnNext_1"
         Me.BtnNext_1.Size = New System.Drawing.Size(36, 17)
         Me.BtnNext_1.TabIndex = 1
         Me.BtnNext_1.Text = "Next"
         '
-        'lblTask_1
-        '
-        Me.lblTask_1.Font = New System.Drawing.Font("Segoe UI Semilight", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTask_1.Location = New System.Drawing.Point(13, 13)
-        Me.lblTask_1.Name = "lblTask_1"
-        Me.lblTask_1.Size = New System.Drawing.Size(242, 90)
-        Me.lblTask_1.TabIndex = 0
-        Me.lblTask_1.Text = "Lorem Ipsum Lorem Ipsum sit dolor amet, lorem ipsum, lorem smet sit dolor amet, l" &
-    "orem ipsum, lorem smet"
-        '
         'PnTask_2
         '
         Me.PnTask_2.BackColor = System.Drawing.Color.White
+        Me.PnTask_2.Controls.Add(Me.EditTask_2)
+        Me.PnTask_2.Controls.Add(Me.lblTask_2)
+        Me.PnTask_2.Controls.Add(Me.lbl_pointer2)
+        Me.PnTask_2.Controls.Add(Me.stage_2)
         Me.PnTask_2.Controls.Add(Me.important_2)
         Me.PnTask_2.Controls.Add(Me.Btn_delete2)
         Me.PnTask_2.Controls.Add(Me.BtnBack_2)
         Me.PnTask_2.Controls.Add(Me.BtnNext_2)
-        Me.PnTask_2.Controls.Add(Me.lblTask_2)
-        Me.PnTask_2.Location = New System.Drawing.Point(8, 156)
+        Me.PnTask_2.Location = New System.Drawing.Point(8, 194)
         Me.PnTask_2.Margin = New System.Windows.Forms.Padding(8, 8, 8, 5)
         Me.PnTask_2.Name = "PnTask_2"
-        Me.PnTask_2.Size = New System.Drawing.Size(301, 135)
+        Me.PnTask_2.Size = New System.Drawing.Size(301, 173)
         Me.PnTask_2.TabIndex = 1
         Me.PnTask_2.Visible = False
         '
@@ -210,7 +220,7 @@ Partial Class Home
         Me.Btn_delete2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Btn_delete2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn_delete2.ForeColor = System.Drawing.Color.DeepPink
-        Me.Btn_delete2.Location = New System.Drawing.Point(15, 106)
+        Me.Btn_delete2.Location = New System.Drawing.Point(14, 140)
         Me.Btn_delete2.Name = "Btn_delete2"
         Me.Btn_delete2.Size = New System.Drawing.Size(49, 17)
         Me.Btn_delete2.TabIndex = 4
@@ -223,7 +233,7 @@ Partial Class Home
         Me.BtnBack_2.Enabled = False
         Me.BtnBack_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnBack_2.ForeColor = System.Drawing.Color.DodgerBlue
-        Me.BtnBack_2.Location = New System.Drawing.Point(206, 106)
+        Me.BtnBack_2.Location = New System.Drawing.Point(205, 140)
         Me.BtnBack_2.Name = "BtnBack_2"
         Me.BtnBack_2.Size = New System.Drawing.Size(39, 17)
         Me.BtnBack_2.TabIndex = 2
@@ -235,34 +245,27 @@ Partial Class Home
         Me.BtnNext_2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnNext_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnNext_2.ForeColor = System.Drawing.Color.DodgerBlue
-        Me.BtnNext_2.Location = New System.Drawing.Point(250, 106)
+        Me.BtnNext_2.Location = New System.Drawing.Point(249, 140)
         Me.BtnNext_2.Name = "BtnNext_2"
         Me.BtnNext_2.Size = New System.Drawing.Size(36, 17)
         Me.BtnNext_2.TabIndex = 1
         Me.BtnNext_2.Text = "Next"
         '
-        'lblTask_2
-        '
-        Me.lblTask_2.Font = New System.Drawing.Font("Segoe UI Semilight", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTask_2.Location = New System.Drawing.Point(13, 13)
-        Me.lblTask_2.Name = "lblTask_2"
-        Me.lblTask_2.Size = New System.Drawing.Size(248, 79)
-        Me.lblTask_2.TabIndex = 0
-        Me.lblTask_2.Text = "Lorem Ipsum Lorem Ipsum sit dolor amet, lorem ipsum, lorem smet sit dolor amet, l" &
-    "orem ipsum, lorem smet"
-        '
         'PnTask_3
         '
         Me.PnTask_3.BackColor = System.Drawing.Color.White
+        Me.PnTask_3.Controls.Add(Me.EditTask_3)
+        Me.PnTask_3.Controls.Add(Me.lblTask_3)
+        Me.PnTask_3.Controls.Add(Me.lbl_pointer3)
+        Me.PnTask_3.Controls.Add(Me.stage_3)
         Me.PnTask_3.Controls.Add(Me.important_3)
         Me.PnTask_3.Controls.Add(Me.Btn_delete3)
         Me.PnTask_3.Controls.Add(Me.BtnBack_3)
         Me.PnTask_3.Controls.Add(Me.BtnNext_3)
-        Me.PnTask_3.Controls.Add(Me.lblTask_3)
-        Me.PnTask_3.Location = New System.Drawing.Point(8, 304)
+        Me.PnTask_3.Location = New System.Drawing.Point(8, 380)
         Me.PnTask_3.Margin = New System.Windows.Forms.Padding(8)
         Me.PnTask_3.Name = "PnTask_3"
-        Me.PnTask_3.Size = New System.Drawing.Size(301, 135)
+        Me.PnTask_3.Size = New System.Drawing.Size(301, 173)
         Me.PnTask_3.TabIndex = 2
         Me.PnTask_3.Visible = False
         '
@@ -272,7 +275,7 @@ Partial Class Home
         Me.Btn_delete3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Btn_delete3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn_delete3.ForeColor = System.Drawing.Color.DeepPink
-        Me.Btn_delete3.Location = New System.Drawing.Point(15, 104)
+        Me.Btn_delete3.Location = New System.Drawing.Point(14, 146)
         Me.Btn_delete3.Name = "Btn_delete3"
         Me.Btn_delete3.Size = New System.Drawing.Size(49, 17)
         Me.Btn_delete3.TabIndex = 5
@@ -285,7 +288,7 @@ Partial Class Home
         Me.BtnBack_3.Enabled = False
         Me.BtnBack_3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnBack_3.ForeColor = System.Drawing.Color.DodgerBlue
-        Me.BtnBack_3.Location = New System.Drawing.Point(206, 104)
+        Me.BtnBack_3.Location = New System.Drawing.Point(205, 146)
         Me.BtnBack_3.Name = "BtnBack_3"
         Me.BtnBack_3.Size = New System.Drawing.Size(39, 17)
         Me.BtnBack_3.TabIndex = 2
@@ -297,29 +300,20 @@ Partial Class Home
         Me.BtnNext_3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnNext_3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnNext_3.ForeColor = System.Drawing.Color.DodgerBlue
-        Me.BtnNext_3.Location = New System.Drawing.Point(250, 104)
+        Me.BtnNext_3.Location = New System.Drawing.Point(249, 146)
         Me.BtnNext_3.Name = "BtnNext_3"
         Me.BtnNext_3.Size = New System.Drawing.Size(36, 17)
         Me.BtnNext_3.TabIndex = 1
         Me.BtnNext_3.Text = "Next"
         '
-        'lblTask_3
-        '
-        Me.lblTask_3.Font = New System.Drawing.Font("Segoe UI Semilight", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTask_3.Location = New System.Drawing.Point(13, 13)
-        Me.lblTask_3.Name = "lblTask_3"
-        Me.lblTask_3.Size = New System.Drawing.Size(248, 79)
-        Me.lblTask_3.TabIndex = 0
-        Me.lblTask_3.Text = "Lorem Ipsum sit dolor amet, lorem ipsum, lorem Lorem Ipsum sit dolor amet, lorem " &
-    "ipsum, lorem smet smet"
-        '
         'FlowLayoutPanel2
         '
         Me.FlowLayoutPanel2.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.FlowLayoutPanel2.AutoScroll = True
         Me.FlowLayoutPanel2.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.FlowLayoutPanel2.Location = New System.Drawing.Point(748, 270)
+        Me.FlowLayoutPanel2.Location = New System.Drawing.Point(765, 269)
         Me.FlowLayoutPanel2.Name = "FlowLayoutPanel2"
-        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(322, 447)
+        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(340, 447)
         Me.FlowLayoutPanel2.TabIndex = 4
         '
         'Label3
@@ -327,7 +321,7 @@ Partial Class Home
         Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI Semibold", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(743, 216)
+        Me.Label3.Location = New System.Drawing.Point(760, 215)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(147, 30)
         Me.Label3.TabIndex = 3
@@ -336,10 +330,11 @@ Partial Class Home
         'FlowLayoutPanel3
         '
         Me.FlowLayoutPanel3.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.FlowLayoutPanel3.AutoScroll = True
         Me.FlowLayoutPanel3.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.FlowLayoutPanel3.Location = New System.Drawing.Point(1085, 270)
+        Me.FlowLayoutPanel3.Location = New System.Drawing.Point(1119, 270)
         Me.FlowLayoutPanel3.Name = "FlowLayoutPanel3"
-        Me.FlowLayoutPanel3.Size = New System.Drawing.Size(322, 447)
+        Me.FlowLayoutPanel3.Size = New System.Drawing.Size(340, 447)
         Me.FlowLayoutPanel3.TabIndex = 6
         '
         'Label4
@@ -347,7 +342,7 @@ Partial Class Home
         Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI Semibold", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(1080, 216)
+        Me.Label4.Location = New System.Drawing.Point(1114, 216)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(114, 30)
         Me.Label4.TabIndex = 5
@@ -376,7 +371,7 @@ Partial Class Home
         Me.lbl_countToDo2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.lbl_countToDo2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_countToDo2.ForeColor = System.Drawing.Color.White
-        Me.lbl_countToDo2.Location = New System.Drawing.Point(896, 221)
+        Me.lbl_countToDo2.Location = New System.Drawing.Point(913, 220)
         Me.lbl_countToDo2.Name = "lbl_countToDo2"
         Me.lbl_countToDo2.Size = New System.Drawing.Size(25, 25)
         Me.lbl_countToDo2.TabIndex = 10
@@ -390,7 +385,7 @@ Partial Class Home
         Me.lbl_countToDo3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.lbl_countToDo3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_countToDo3.ForeColor = System.Drawing.Color.White
-        Me.lbl_countToDo3.Location = New System.Drawing.Point(1200, 221)
+        Me.lbl_countToDo3.Location = New System.Drawing.Point(1234, 220)
         Me.lbl_countToDo3.Name = "lbl_countToDo3"
         Me.lbl_countToDo3.Size = New System.Drawing.Size(25, 25)
         Me.lbl_countToDo3.TabIndex = 11
@@ -594,6 +589,141 @@ Partial Class Home
         Me.ComboBox1.Size = New System.Drawing.Size(107, 28)
         Me.ComboBox1.TabIndex = 35
         '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Segoe UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Location = New System.Drawing.Point(318, 134)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(65, 30)
+        Me.Button1.TabIndex = 39
+        Me.Button1.Text = "Reset"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'stage_1
+        '
+        Me.stage_1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.stage_1.AutoSize = True
+        Me.stage_1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.stage_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.stage_1.ForeColor = System.Drawing.Color.Black
+        Me.stage_1.Location = New System.Drawing.Point(165, 140)
+        Me.stage_1.Name = "stage_1"
+        Me.stage_1.Size = New System.Drawing.Size(16, 17)
+        Me.stage_1.TabIndex = 24
+        Me.stage_1.Text = "1"
+        '
+        'stage_2
+        '
+        Me.stage_2.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.stage_2.AutoSize = True
+        Me.stage_2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.stage_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.stage_2.ForeColor = System.Drawing.Color.Black
+        Me.stage_2.Location = New System.Drawing.Point(165, 140)
+        Me.stage_2.Name = "stage_2"
+        Me.stage_2.Size = New System.Drawing.Size(16, 17)
+        Me.stage_2.TabIndex = 25
+        Me.stage_2.Text = "1"
+        '
+        'stage_3
+        '
+        Me.stage_3.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.stage_3.AutoSize = True
+        Me.stage_3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.stage_3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.stage_3.ForeColor = System.Drawing.Color.Black
+        Me.stage_3.Location = New System.Drawing.Point(165, 146)
+        Me.stage_3.Name = "stage_3"
+        Me.stage_3.Size = New System.Drawing.Size(16, 17)
+        Me.stage_3.TabIndex = 25
+        Me.stage_3.Text = "1"
+        '
+        'lbl_pointer1
+        '
+        Me.lbl_pointer1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lbl_pointer1.AutoSize = True
+        Me.lbl_pointer1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lbl_pointer1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_pointer1.ForeColor = System.Drawing.Color.Black
+        Me.lbl_pointer1.Location = New System.Drawing.Point(187, 140)
+        Me.lbl_pointer1.Name = "lbl_pointer1"
+        Me.lbl_pointer1.Size = New System.Drawing.Size(16, 17)
+        Me.lbl_pointer1.TabIndex = 25
+        Me.lbl_pointer1.Text = "1"
+        '
+        'lbl_pointer2
+        '
+        Me.lbl_pointer2.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lbl_pointer2.AutoSize = True
+        Me.lbl_pointer2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lbl_pointer2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_pointer2.ForeColor = System.Drawing.Color.Black
+        Me.lbl_pointer2.Location = New System.Drawing.Point(184, 140)
+        Me.lbl_pointer2.Name = "lbl_pointer2"
+        Me.lbl_pointer2.Size = New System.Drawing.Size(16, 17)
+        Me.lbl_pointer2.TabIndex = 26
+        Me.lbl_pointer2.Text = "1"
+        '
+        'lbl_pointer3
+        '
+        Me.lbl_pointer3.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lbl_pointer3.AutoSize = True
+        Me.lbl_pointer3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lbl_pointer3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_pointer3.ForeColor = System.Drawing.Color.Black
+        Me.lbl_pointer3.Location = New System.Drawing.Point(184, 146)
+        Me.lbl_pointer3.Name = "lbl_pointer3"
+        Me.lbl_pointer3.Size = New System.Drawing.Size(16, 17)
+        Me.lbl_pointer3.TabIndex = 27
+        Me.lbl_pointer3.Text = "1"
+        '
+        'lblTask_1
+        '
+        Me.lblTask_1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblTask_1.BackColor = System.Drawing.Color.White
+        Me.lblTask_1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.lblTask_1.Font = New System.Drawing.Font("Segoe UI Semilight", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTask_1.Location = New System.Drawing.Point(12, 22)
+        Me.lblTask_1.Name = "lblTask_1"
+        Me.lblTask_1.ReadOnly = True
+        Me.lblTask_1.Size = New System.Drawing.Size(236, 102)
+        Me.lblTask_1.TabIndex = 27
+        Me.lblTask_1.Text = "Lorem Ipsum Lorem Ipsum sit dolor amet, lorem ipsum, lorem smet sit dolor amet" & Global.Microsoft.VisualBasic.ChrW(10) & ", " &
+    "sit dolor amet" & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        'lblTask_2
+        '
+        Me.lblTask_2.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblTask_2.BackColor = System.Drawing.Color.White
+        Me.lblTask_2.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.lblTask_2.Font = New System.Drawing.Font("Segoe UI Semilight", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTask_2.Location = New System.Drawing.Point(12, 22)
+        Me.lblTask_2.Name = "lblTask_2"
+        Me.lblTask_2.ReadOnly = True
+        Me.lblTask_2.Size = New System.Drawing.Size(236, 102)
+        Me.lblTask_2.TabIndex = 28
+        Me.lblTask_2.Text = "Lorem Ipsum Lorem Ipsum sit dolor amet, lorem ipsum, lorem smet sit dolor amet" & Global.Microsoft.VisualBasic.ChrW(10) & ", " &
+    "sit dolor amet" & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        'lblTask_3
+        '
+        Me.lblTask_3.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblTask_3.BackColor = System.Drawing.Color.White
+        Me.lblTask_3.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.lblTask_3.Font = New System.Drawing.Font("Segoe UI Semilight", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTask_3.Location = New System.Drawing.Point(12, 22)
+        Me.lblTask_3.Name = "lblTask_3"
+        Me.lblTask_3.ReadOnly = True
+        Me.lblTask_3.Size = New System.Drawing.Size(236, 102)
+        Me.lblTask_3.TabIndex = 29
+        Me.lblTask_3.Text = "Lorem Ipsum Lorem Ipsum sit dolor amet, lorem ipsum, lorem smet sit dolor amet" & Global.Microsoft.VisualBasic.ChrW(10) & ", " &
+    "sit dolor amet" & Global.Microsoft.VisualBasic.ChrW(10)
+        '
         'PictureBox2
         '
         Me.PictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None
@@ -658,12 +788,24 @@ Partial Class Home
         Me.Pic_Profile.TabIndex = 13
         Me.Pic_Profile.TabStop = False
         '
+        'EditTask_1
+        '
+        Me.EditTask_1.BackColor = System.Drawing.Color.Transparent
+        Me.EditTask_1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.EditTask_1.Image = Global.Taskr.My.Resources.Resources.edit__1_
+        Me.EditTask_1.Location = New System.Drawing.Point(264, 63)
+        Me.EditTask_1.Name = "EditTask_1"
+        Me.EditTask_1.Size = New System.Drawing.Size(25, 25)
+        Me.EditTask_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.EditTask_1.TabIndex = 40
+        Me.EditTask_1.TabStop = False
+        '
         'important_1
         '
         Me.important_1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.important_1.BackColor = System.Drawing.Color.Silver
         Me.important_1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.important_1.Location = New System.Drawing.Point(264, 13)
+        Me.important_1.Location = New System.Drawing.Point(264, 22)
         Me.important_1.Name = "important_1"
         Me.important_1.Size = New System.Drawing.Size(25, 25)
         Me.important_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -675,7 +817,7 @@ Partial Class Home
         Me.important_2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.important_2.BackColor = System.Drawing.Color.Silver
         Me.important_2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.important_2.Location = New System.Drawing.Point(264, 13)
+        Me.important_2.Location = New System.Drawing.Point(264, 21)
         Me.important_2.Name = "important_2"
         Me.important_2.Size = New System.Drawing.Size(25, 25)
         Me.important_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -687,12 +829,36 @@ Partial Class Home
         Me.important_3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.important_3.BackColor = System.Drawing.Color.Silver
         Me.important_3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.important_3.Location = New System.Drawing.Point(264, 13)
+        Me.important_3.Location = New System.Drawing.Point(264, 22)
         Me.important_3.Name = "important_3"
         Me.important_3.Size = New System.Drawing.Size(25, 25)
         Me.important_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.important_3.TabIndex = 16
         Me.important_3.TabStop = False
+        '
+        'EditTask_2
+        '
+        Me.EditTask_2.BackColor = System.Drawing.Color.Transparent
+        Me.EditTask_2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.EditTask_2.Image = Global.Taskr.My.Resources.Resources.edit__1_
+        Me.EditTask_2.Location = New System.Drawing.Point(264, 61)
+        Me.EditTask_2.Name = "EditTask_2"
+        Me.EditTask_2.Size = New System.Drawing.Size(25, 25)
+        Me.EditTask_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.EditTask_2.TabIndex = 41
+        Me.EditTask_2.TabStop = False
+        '
+        'EditTask_3
+        '
+        Me.EditTask_3.BackColor = System.Drawing.Color.Transparent
+        Me.EditTask_3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.EditTask_3.Image = Global.Taskr.My.Resources.Resources.edit__1_
+        Me.EditTask_3.Location = New System.Drawing.Point(264, 59)
+        Me.EditTask_3.Name = "EditTask_3"
+        Me.EditTask_3.Size = New System.Drawing.Size(25, 25)
+        Me.EditTask_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.EditTask_3.TabIndex = 41
+        Me.EditTask_3.TabStop = False
         '
         'Home
         '
@@ -701,6 +867,7 @@ Partial Class Home
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1501, 758)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.BtnDarkMode)
         Me.Controls.Add(Me.PictureBox1)
@@ -746,9 +913,12 @@ Partial Class Home
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pic_Desempenho, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Pic_Profile, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EditTask_1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.important_1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.important_2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.important_3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EditTask_2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EditTask_3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -760,7 +930,6 @@ Partial Class Home
     Friend WithEvents PnTask_1 As Panel
     Friend WithEvents BtnBack_1 As Label
     Friend WithEvents BtnNext_1 As Label
-    Friend WithEvents lblTask_1 As Label
     Friend WithEvents FlowLayoutPanel2 As FlowLayoutPanel
     Friend WithEvents Label3 As Label
     Friend WithEvents FlowLayoutPanel3 As FlowLayoutPanel
@@ -770,11 +939,9 @@ Partial Class Home
     Friend WithEvents PnTask_2 As Panel
     Friend WithEvents BtnBack_2 As Label
     Friend WithEvents BtnNext_2 As Label
-    Friend WithEvents lblTask_2 As Label
     Friend WithEvents PnTask_3 As Panel
     Friend WithEvents BtnBack_3 As Label
     Friend WithEvents BtnNext_3 As Label
-    Friend WithEvents lblTask_3 As Label
     Friend WithEvents lbl_countToDo2 As Label
     Friend WithEvents lbl_countToDo3 As Label
     Friend WithEvents lbl_Usuário As Label
@@ -806,4 +973,17 @@ Partial Class Home
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents BtnDarkMode As Button
     Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents Button1 As Button
+    Friend WithEvents stage_1 As Label
+    Friend WithEvents stage_2 As Label
+    Friend WithEvents stage_3 As Label
+    Friend WithEvents lbl_pointer1 As Label
+    Friend WithEvents lbl_pointer2 As Label
+    Friend WithEvents lbl_pointer3 As Label
+    Friend WithEvents lblTask_1 As RichTextBox
+    Friend WithEvents lblTask_2 As RichTextBox
+    Friend WithEvents lblTask_3 As RichTextBox
+    Friend WithEvents EditTask_1 As PictureBox
+    Friend WithEvents EditTask_2 As PictureBox
+    Friend WithEvents EditTask_3 As PictureBox
 End Class
